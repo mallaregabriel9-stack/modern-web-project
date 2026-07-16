@@ -1,20 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Contact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact page for Modern Web Project">
+    <title>Contact | Modern Web Project</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Contact Page</h1>
 
-    <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message"></textarea>
-        <button type="submit">Send</button>
+<header>
+    <h1>Contact Us</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+
+<section>
+    <h2>Send us a Message</h2>
+
+    <form onsubmit="return validateForm()">
+
+        <input type="text"
+               id="name"
+               placeholder="Your Name">
+
+        <input type="email"
+               id="email"
+               placeholder="Your Email">
+
+        <textarea
+            id="message"
+            placeholder="Your Message">
+        </textarea>
+
+        <button type="submit">
+            Send Message
+        </button>
+
     </form>
+</section>
 
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
+</main>
+
+<footer>
+    <p>&copy; 2026 Gabriel Mallare</p>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>

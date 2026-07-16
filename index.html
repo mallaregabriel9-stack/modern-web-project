@@ -3,34 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Web Project</title>
+    <meta name="description" content="Modern Web Project Home Page">
+    <title>Gabriel and....</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Welcome to My Website</h1>
+<header>
+    <h1>Modern Web Project</h1>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
 
-    <main>
-        <section>
-            <h2>Home Page</h2>
-            <p>This is my web development project for Module 5.</p>
+<main>
+    <section class="hero">
+        <h2 id="greeting"></h2>
 
-            <button onclick="showMessage()">Click Me</button>
-        </section>
-    </main>
+        <p>
+            Welcome to my page
+        </p>
 
-    <footer>
-        <p>&copy; 2026 Gabriel Mallare</p>
-    </footer>
+        <button onclick="showMessage()">
+            Click Me
+        </button>
+    </section>
 
-    <script src="script.js"></script>
+    <section>
+        <h2>Featured Service</h2>
+
+        <img src="https://via.placeholder.com/400x200"
+             alt="Website development service">
+
+        <p>
+            We create simple, responsive, and user-friendly websites.
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Gabriel Mallare</p>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
